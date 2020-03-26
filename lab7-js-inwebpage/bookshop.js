@@ -88,7 +88,7 @@ let books = [
 
 function showBooks() {
   let listItem = document.querySelector("ul");
-  
+
   var range = document.createRange();
   range.selectNodeContents(listItem);
   range.deleteContents();
@@ -98,4 +98,13 @@ function showBooks() {
     listValue.textContent = book;
     listItem.appendChild(listValue);
   }
+}
+
+function getWelcomeMessage() {
+  return "Welcome to John's Bookshop";
+}
+
+function setup() {
+  let heading = document.getElementsByTagName("h1")[0];
+  heading.innerHTML = getWelcomeMessage();
 }
