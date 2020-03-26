@@ -1,7 +1,7 @@
 class Product {
   constructor(price) {
-  this.price = price;
-  this.discount = 0.0;
+    this.price = price;
+    this.discount = 0.0;
   }
 
   setSaleDiscount(discount) {
@@ -76,15 +76,22 @@ let publisher = new Publisher("Tech Books Publishing Ltd.", "10 High Street");
 let books = [
   new Book(1, "JavaScript Unleashed", author, "Technical", publisher, 15.99),
   new Book(1, "JavaScript Server", author, "Technical", publisher, 12.99),
-  new Book(1, "JavaScript Live", new Author("John", "Cooke"), "Technical", publisher, 14.49)
-]
+  new Book(
+    1,
+    "JavaScript Live",
+    new Author("John", "Cooke"),
+    "Technical",
+    publisher,
+    14.49
+  )
+];
 
 console.log("Welcome to the Bookshop");
-console.log('We have the following books available')
+console.log("We have the following books available");
 
 books.forEach(book => console.log(`${book}`));
 
-let book = books[0]
+let book = books[0];
 console.log("Calculating the Sales Discount price");
 book.setSaleDiscount(0.1);
 console.log("Sale price of book:", book.calculateSalePrice());
