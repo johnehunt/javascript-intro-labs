@@ -1,4 +1,4 @@
-describe("Tesing the functions in bookshop", function() {
+describe("Testing the functions in bookshop", function() {
 
     describe("Testing getWelcomeMessage function", function() {
       it("should return the string Welcome to John's Bookshop", function() {
@@ -35,6 +35,7 @@ describe("Tesing the functions in bookshop", function() {
         const listItem = document.querySelector("ul");
         const numberOfElements = listItem.childElementCount;
         expect(numberOfElements).toBe(3);
+
       })
     })
 
