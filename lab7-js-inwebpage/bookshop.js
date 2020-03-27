@@ -89,7 +89,7 @@ let books = [
 function showBooks() {
   let listItem = document.querySelector("ul");
 
-  var range = document.createRange();
+  let range = document.createRange();
   range.selectNodeContents(listItem);
   range.deleteContents();
 
