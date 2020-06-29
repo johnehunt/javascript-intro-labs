@@ -1,6 +1,6 @@
-console.log("Starting factorial calculation program")
+console.log("Starting factorial calculation program");
 let number = 5;
-console.log('Calculating the factorial for', number)
+console.log('Calculating the factorial for', number);
 
 if (number < 0) {
   console.log('Factorial is not defined for negative numbers')
