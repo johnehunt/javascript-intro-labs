@@ -14,17 +14,19 @@ function setup() {
 }
 
 function showBooks() {
-    let listItem = document.querySelector("ul");
+    let unorderedList = document.querySelector("ul");
   
+    // Allows us to delete current contents of listItem
     let range = document.createRange();
-    range.selectNodeContents(listItem);
+    range.selectNodeContents(unorderedList);
     range.deleteContents();
   
+    // Now loop through books adding a set of list items
     for (let book of books) {
       console.log(book);
-      let listValue = document.createElement("li");
-      listValue.textContent = book;
-      listItem.appendChild(listValue);
+      let listItem = document.createElement("li");
+      listItem.textContent = book;
+      unorderedList.appendChild(listItem);
     }
   }
   
