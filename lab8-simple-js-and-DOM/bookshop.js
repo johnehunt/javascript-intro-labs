@@ -1,4 +1,4 @@
-let books = [
+const books = [
   [1, "JavaScript Unleashed", "Pete Smith", "Technical", "Tech Books", 15.99],
   [2, "JavaScript Server", "Pete Smith", "Technical", "Tech Books", 12.99],
   [3, "JavaScript Live", "John Cooke", "Technical", "Tech Books", 14.49]
